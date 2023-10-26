@@ -16,7 +16,7 @@ menu=["Inicio","Ver","Añadir","Buscar"]
 choice=st.sidebar.selectbox("Menu",menu)
 
 if choice=="Añadir":
-    
+    create_table()
     pop=st.text_input("Ingresa poblacion: ")
     g=st.text_input("Ingresa generacion: ")
     tipo=st.text_input("Ingresa tipo: ")
