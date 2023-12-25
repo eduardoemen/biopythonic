@@ -8,11 +8,11 @@ if uploaded_file is not None:
     df = pd.read_csv(stringio)
     c=df['gene'].value_counts()
     
-    data_as_csv= c.to_csv(index=False).encode("utf-8")
+    data_as_csv= c.to_csv(index=True).encode("utf-8")
     st.download_button(
     "Download data as CSV", 
      data_as_csv, 
-    "benchmark-tools.csv",
+    "reporte.csv",
     "text/csv",
     key="download-tools-csv",
     )
